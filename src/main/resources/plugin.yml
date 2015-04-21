@@ -1,0 +1,15 @@
+name: SkyrimArchery
+main: io.github.notze.skyrimArchery.Main
+version: 0.0.1-SNAPSHOT
+
+commands:
+  sahelp:
+    description: Display help
+    usage: Usage /sahelp
+    permission: skyrimArchery.help
+    permission-message: You don't have permission <skyrimArchery.help>
+  saskill:
+    description: Open skill menu
+    usage: Usage /saskill
+    permission: skyrimArchery.skill
+    permission-message: You don't have permission <skyrimArchery.skill>
