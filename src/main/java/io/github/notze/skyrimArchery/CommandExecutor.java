@@ -24,10 +24,11 @@ public class CommandExecutor implements org.bukkit.command.CommandExecutor {
 	public boolean onCommand(CommandSender sender, Command command,
 			String label, String[] args) {
 		
-		if( command.getName().equals("sahelp") )
-			// TODO implement
+		if( command.getName().equals("sahelp") ){
+			sender.sendMessage("/sahelp - display this help");
+			sender.sendMessage("/saskill - shows your skilltree");
 			return true;
-		else if( command.getName().equals("saskill") )
+		}else if( command.getName().equals("saskill") )
 			if( !(sender instanceof Player) ){
 				sender.sendMessage("This command can only be run by a player!");
 				return true;
