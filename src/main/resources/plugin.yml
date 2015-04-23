@@ -13,3 +13,5 @@ commands:
     usage: Usage /saskill
     permission: skyrimArchery.skill
     permission-message: You don't have permission <skyrimArchery.skill>
+  sacheat:
+    permission: cheat.skyrimArchery

@@ -1,5 +1,6 @@
 package io.github.notze.skyrimArchery.util;
 
+import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 
 /**
@@ -14,11 +15,9 @@ public class ItemCheck {
 	 * @param item item to check
 	 * @return true if item is dat bow otherwise false
 	 */
-	public boolean isDatBow(ItemStack item){
-		// requirements:
-		//  name: Dat Bow!
-		//  enchantments: none!
-		//  material: bow
-		return false;
+	public static boolean isDatBow(ItemStack item){
+		if( !(item.getType().equals(Material.BOW)) ) return false;
+		if( item.hasItemMeta() ) return false;
+		return true;
 	}
 }
