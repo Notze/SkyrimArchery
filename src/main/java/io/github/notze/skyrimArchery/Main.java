@@ -36,7 +36,7 @@ public final class Main extends JavaPlugin{
 		// commands
 		CommandExecutor commandExecutor = new CommandExecutor(this);
 		this.getCommand("saskill").setExecutor(commandExecutor);
-		this.getCommand("sacheat").setExecutor(commandExecutor);
+//		this.getCommand("sacheat").setExecutor(commandExecutor);
 		
 		// skills and other events
 		List<Listener> listeners = new ArrayList<Listener>(){{
